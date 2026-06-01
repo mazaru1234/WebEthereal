@@ -1,7 +1,19 @@
 document.addEventListener('DOMContentLoaded', () => {
+  initBgVideo();
   initSidebarHighlight();
   initTocHighlight();
 });
+
+function initBgVideo() {
+  const video = document.querySelector('.bg-video__el');
+  if (!video) return;
+  video.muted = true;
+  const play = () => video.play().catch(() => {});
+  play();
+  document.addEventListener('visibilitychange', () => {
+    if (!document.hidden) play();
+  });
+}
 
 function initSidebarHighlight() {
   const links = document.querySelectorAll('.sidebar-link');

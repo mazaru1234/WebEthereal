@@ -13,6 +13,13 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+  <div class="bg-video" aria-hidden="true">
+    <video class="bg-video__el" autoplay muted loop playsinline preload="auto" poster="">
+      <source src="videos/bg.mp4" type="video/mp4">
+    </video>
+    <div class="bg-video__overlay"></div>
+  </div>
+
   <a href="#main" class="skip-link">Skip to content</a>
 
   <div class="app-shell">
@@ -51,11 +58,7 @@
 
     <main id="main">
       <section class="hero">
-        <div class="hero-bg" aria-hidden="true">
-          <div class="hero-orb hero-orb-1"></div>
-          <div class="hero-orb hero-orb-2"></div>
-          <div class="hero-orb hero-orb-3"></div>
-        </div>
+        <div class="hero-bg" aria-hidden="true"></div>
 
         <div class="hero-content">
           <p class="hero-badge anim-item" style="--i:0">Full-Cycle Studio</p>

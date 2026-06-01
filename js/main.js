@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+  initBgVideo();
   initNav();
   initContactForm();
   initScrollReveal();
@@ -8,6 +9,17 @@ document.addEventListener('DOMContentLoaded', () => {
   initBottomNav();
   initWorkDots();
 });
+
+function initBgVideo() {
+  const video = document.querySelector('.bg-video__el');
+  if (!video) return;
+  video.muted = true;
+  const play = () => video.play().catch(() => {});
+  play();
+  document.addEventListener('visibilitychange', () => {
+    if (!document.hidden) play();
+  });
+}
 
 function initNav() {
   const nav = document.querySelector('.nav');
