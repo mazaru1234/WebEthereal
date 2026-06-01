@@ -473,43 +473,194 @@ button, input, textarea { font: inherit; border: none; background: none; }
 .phone-screen {
   background: var(--bg);
   border-radius: 20px;
-  padding: 12px;
+  padding: 10px;
   overflow: hidden;
 }
 
-.mock-header {
-  height: 8px;
-  width: 40%;
-  background: var(--border);
+.mock-app {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.mock-topbar {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.mock-logo {
+  width: 16px;
+  height: 16px;
   border-radius: 4px;
-  margin-bottom: 10px;
-  animation: shimmer 2s ease-in-out infinite;
+  flex-shrink: 0;
 }
 
-.mock-block {
-  background: linear-gradient(90deg, var(--accent-light), rgba(37, 99, 168, 0.2));
-  border-radius: 8px;
+.mock-brand {
+  font-family: var(--font-display);
+  font-size: 0.5625rem;
+  font-weight: 700;
+  color: var(--text);
+  flex: 1;
+  letter-spacing: -0.02em;
+}
+
+.mock-brand span { color: var(--accent); }
+
+.mock-menu {
+  width: 14px;
+  height: 2px;
+  background: var(--text-muted);
+  border-radius: 2px;
+  box-shadow: 0 -4px 0 var(--text-muted), 0 4px 0 var(--text-muted);
+}
+
+.mock-hero-card {
+  background: linear-gradient(145deg, rgba(37, 99, 168, 0.35), rgba(86, 200, 255, 0.15));
+  border: 1px solid rgba(86, 200, 255, 0.2);
+  border-radius: 10px;
+  padding: 10px 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.mock-hero-card::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 60px;
+  height: 60px;
+  background: radial-gradient(circle, rgba(86, 200, 255, 0.25), transparent 70%);
+  pointer-events: none;
+}
+
+.mock-badge {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.4375rem;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 4px;
+}
+
+.mock-title {
+  font-family: var(--font-display);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--text);
   margin-bottom: 8px;
-  animation: mockPulse 3s ease-in-out infinite;
 }
 
-.mock-block-lg { height: 60px; }
-.mock-block-md { height: 32px; width: 70%; }
-.mock-block-sm { height: 40px; flex: 1; }
+.mock-title span { color: var(--accent); }
 
-.mock-row { display: flex; gap: 6px; margin-bottom: 8px; }
+.mock-cta {
+  display: inline-block;
+  font-size: 0.5rem;
+  font-weight: 600;
+  color: var(--accent-text);
+  background: var(--accent);
+  padding: 4px 10px;
+  border-radius: 999px;
+  animation: mockCtaPulse 2.5s ease-in-out infinite;
+}
 
-.mock-nav {
-  height: 24px;
+@keyframes mockCtaPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(86, 200, 255, 0.4); }
+  50% { box-shadow: 0 0 0 4px rgba(86, 200, 255, 0); }
+}
+
+.mock-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px;
+}
+
+.mock-stat {
   background: var(--bg-card);
-  border-radius: 12px;
   border: 1px solid var(--border);
-  margin-top: 4px;
+  border-radius: 6px;
+  padding: 5px 4px;
+  text-align: center;
 }
 
-@keyframes mockPulse {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.7; }
+.mock-stat strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 0.5625rem;
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1.2;
+}
+
+.mock-stat span {
+  font-size: 0.375rem;
+  color: var(--text-muted);
+}
+
+.mock-cards {
+  display: flex;
+  gap: 5px;
+}
+
+.mock-card {
+  flex: 1;
+  height: 36px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  position: relative;
+  overflow: hidden;
+}
+
+.mock-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 12px;
+  background: var(--bg-card);
+}
+
+.mock-card--green {
+  background: linear-gradient(160deg, #dcfce7 40%, #4ade80 100%);
+}
+
+.mock-card--blue {
+  background: linear-gradient(160deg, #dbeafe 40%, #3b82f6 100%);
+}
+
+.mock-bottom-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 6px 10px;
+}
+
+.mock-nav-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--text-dim);
+}
+
+.mock-nav-dot.active {
+  background: var(--accent);
+  box-shadow: 0 0 6px var(--accent-glow);
+}
+
+.mock-nav-pill {
+  width: 28px;
+  height: 6px;
+  background: linear-gradient(90deg, var(--blue-mid), var(--accent));
+  border-radius: 999px;
+  margin-left: auto;
 }
 
 @keyframes shimmer {
