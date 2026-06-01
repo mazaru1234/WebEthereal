@@ -1049,6 +1049,19 @@ button, input, textarea { font: inherit; border: none; background: none; }
   margin-inline: auto;
 }
 
+.work-empty {
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+  border: 1px dashed var(--border);
+  border-radius: var(--radius-lg);
+  color: var(--text-muted);
+}
+
+.work-empty p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
 .work-card {
   --work-accent: var(--accent);
   width: 280px;
