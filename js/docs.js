@@ -9,9 +9,6 @@ function initBgVideo() {
   const video = document.querySelector('.bg-video__el');
   if (!video || !shell) return;
 
-  const motionOk = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if (!motionOk) return;
-
   video.muted = true;
   video.defaultMuted = true;
   video.setAttribute('muted', '');

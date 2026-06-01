@@ -577,7 +577,5 @@ code {
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .bg-video__el { display: none; }
-  .bg-video { background: #070b14 url('../images/bg-poster.jpg') center / cover no-repeat; }
   body.docs-body { background: #0c1222; }
 }

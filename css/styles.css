@@ -2380,10 +2380,6 @@ button, input, textarea { font: inherit; border: none; background: none; }
 
   html { scroll-behavior: auto; }
 
-  .bg-video__el { display: none; }
-
-  .bg-video { background: #070b14 url('../images/bg-poster.jpg') center / cover no-repeat; }
-
   body { background: #0c1222; }
 
   .anim-item {
