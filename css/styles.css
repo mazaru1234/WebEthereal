@@ -147,8 +147,9 @@ button, input, textarea { font: inherit; border: none; background: none; }
 .logo-mark {
   width: 28px;
   height: 28px;
-  background: linear-gradient(135deg, var(--blue-mid), var(--accent));
   border-radius: 8px;
+  object-fit: cover;
+  flex-shrink: 0;
   animation: logoPulse 3s ease-in-out infinite;
 }
 
