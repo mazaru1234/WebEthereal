@@ -64,6 +64,8 @@ body {
 }
 
 .bg-video__el {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -75,9 +77,9 @@ body {
   inset: 0;
   background: linear-gradient(
     180deg,
-    rgba(7, 11, 20, 0.45) 0%,
-    rgba(7, 11, 20, 0.62) 50%,
-    rgba(7, 11, 20, 0.78) 100%
+    rgba(7, 11, 20, 0.2) 0%,
+    rgba(7, 11, 20, 0.35) 50%,
+    rgba(7, 11, 20, 0.5) 100%
   );
 }
 
@@ -109,12 +111,10 @@ button, input, textarea { font: inherit; border: none; background: none; }
   max-width: var(--app-w);
   min-height: 100dvh;
   margin-inline: auto;
-  background: rgba(12, 18, 34, 0.72);
-  backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
+  background: transparent;
   position: relative;
   overflow-x: hidden;
-  box-shadow: 0 0 0 1px var(--border), 0 24px 80px rgba(0, 0, 0, 0.55);
+  box-shadow: 0 0 0 1px rgba(56, 189, 248, 0.08);
   z-index: 1;
 }
 
@@ -153,9 +153,9 @@ button, input, textarea { font: inherit; border: none; background: none; }
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(12, 18, 34, 0.88);
-  backdrop-filter: blur(20px) saturate(180%);
-  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  background: rgba(12, 18, 34, 0.65);
+  backdrop-filter: blur(16px) saturate(160%);
+  -webkit-backdrop-filter: blur(16px) saturate(160%);
   border-bottom: 1px solid var(--border);
   transition: transform var(--dur-base) var(--ease-out), box-shadow var(--dur-base);
 }
@@ -1874,9 +1874,9 @@ button, input, textarea { font: inherit; border: none; background: none; }
   height: calc(var(--bottom-nav-h) + var(--safe-bottom));
   padding-bottom: var(--safe-bottom);
   display: flex;
-  background: rgba(12, 18, 34, 0.92);
-  backdrop-filter: blur(20px) saturate(180%);
-  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  background: rgba(12, 18, 34, 0.75);
+  backdrop-filter: blur(16px) saturate(160%);
+  -webkit-backdrop-filter: blur(16px) saturate(160%);
   border-top: 1px solid var(--border);
   z-index: 100;
 }

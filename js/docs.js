@@ -7,12 +7,25 @@ document.addEventListener('DOMContentLoaded', () => {
 function initBgVideo() {
   const video = document.querySelector('.bg-video__el');
   if (!video) return;
+
   video.muted = true;
-  const play = () => video.play().catch(() => {});
+  video.defaultMuted = true;
+  video.setAttribute('muted', '');
+
+  const play = () => {
+    const p = video.play();
+    if (p && typeof p.catch === 'function') p.catch(() => {});
+  };
+
   play();
+  video.addEventListener('loadeddata', play, { once: true });
+  video.addEventListener('canplay', play, { once: true });
+
   document.addEventListener('visibilitychange', () => {
     if (!document.hidden) play();
   });
+
+  document.addEventListener('click', () => play(), { once: true });
 }
 
 function initSidebarHighlight() {

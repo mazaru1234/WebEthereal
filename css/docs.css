@@ -53,9 +53,9 @@ body.docs-body {
   inset: 0;
   background: linear-gradient(
     180deg,
-    rgba(7, 11, 20, 0.5) 0%,
-    rgba(7, 11, 20, 0.68) 50%,
-    rgba(7, 11, 20, 0.82) 100%
+    rgba(7, 11, 20, 0.22) 0%,
+    rgba(7, 11, 20, 0.38) 50%,
+    rgba(7, 11, 20, 0.52) 100%
   );
 }
 
