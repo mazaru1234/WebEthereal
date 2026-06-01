@@ -292,43 +292,99 @@
       </section>
 
       <section class="section stack" id="stack">
-        <header class="section-header reveal">
-          <p class="section-eyebrow">Стек</p>
-          <h2 class="section-title">Технологии</h2>
-        </header>
-        <div class="stack-grid">
-          <span class="stack-pill reveal">React</span>
-          <span class="stack-pill reveal">Next.js</span>
-          <span class="stack-pill reveal">Vue</span>
-          <span class="stack-pill reveal">TypeScript</span>
-          <span class="stack-pill reveal">Figma</span>
-          <span class="stack-pill reveal">Node.js</span>
-          <span class="stack-pill reveal">Shopify</span>
-          <span class="stack-pill reveal">Vercel</span>
+        <div class="stack-wrap">
+          <header class="section-header reveal">
+            <p class="section-eyebrow">Стек</p>
+            <h2 class="section-title">Технологии</h2>
+            <p class="section-desc">Современный стек для быстрых, надёжных и масштабируемых сайтов</p>
+          </header>
+          <div class="stack-grid">
+            <article class="stack-card reveal">
+              <div class="stack-icon stack-icon--react" aria-hidden="true">R</div>
+              <div class="stack-info"><strong>React</strong><span>Frontend</span></div>
+            </article>
+            <article class="stack-card reveal">
+              <div class="stack-icon stack-icon--next" aria-hidden="true">N</div>
+              <div class="stack-info"><strong>Next.js</strong><span>Frontend</span></div>
+            </article>
+            <article class="stack-card reveal">
+              <div class="stack-icon stack-icon--vue" aria-hidden="true">V</div>
+              <div class="stack-info"><strong>Vue</strong><span>Frontend</span></div>
+            </article>
+            <article class="stack-card reveal">
+              <div class="stack-icon stack-icon--ts" aria-hidden="true">TS</div>
+              <div class="stack-info"><strong>TypeScript</strong><span>Язык</span></div>
+            </article>
+            <article class="stack-card reveal">
+              <div class="stack-icon stack-icon--figma" aria-hidden="true">F</div>
+              <div class="stack-info"><strong>Figma</strong><span>Дизайн</span></div>
+            </article>
+            <article class="stack-card reveal">
+              <div class="stack-icon stack-icon--node" aria-hidden="true">N</div>
+              <div class="stack-info"><strong>Node.js</strong><span>Backend</span></div>
+            </article>
+            <article class="stack-card reveal">
+              <div class="stack-icon stack-icon--shopify" aria-hidden="true">S</div>
+              <div class="stack-info"><strong>Shopify</strong><span>E-commerce</span></div>
+            </article>
+            <article class="stack-card reveal">
+              <div class="stack-icon stack-icon--vercel" aria-hidden="true">▲</div>
+              <div class="stack-info"><strong>Vercel</strong><span>Деплой</span></div>
+            </article>
+          </div>
         </div>
       </section>
 
       <section class="section testimonials" id="about">
-        <header class="section-header reveal">
-          <p class="section-eyebrow">Отзывы</p>
-          <h2 class="section-title">Клиенты о нас</h2>
-        </header>
-        <div class="testimonials-scroll snap-scroll" id="testimonialScroll">
-          <blockquote class="testimonial-card reveal">
-            <div class="testimonial-stars" aria-hidden="true">★★★★★</div>
-            <p>«Лендинг за 12 дней. Конверсия ×2. Команда всегда на связи.»</p>
-            <footer><strong>Анна К.</strong><span>GreenMarket</span></footer>
-          </blockquote>
-          <blockquote class="testimonial-card reveal">
-            <div class="testimonial-stars" aria-hidden="true">★★★★★</div>
-            <p>«Сайт платёжного сервиса — быстро, без костылей. Чистый код.»</p>
-            <footer><strong>Дмитрий В.</strong><span>PayFlow</span></footer>
-          </blockquote>
-          <blockquote class="testimonial-card reveal">
-            <div class="testimonial-stars" aria-hidden="true">★★★★★</div>
-            <p>«Редизайн без потери SEO. Современно и быстро.»</p>
-            <footer><strong>Елена М.</strong><span>MedLine</span></footer>
-          </blockquote>
+        <div class="testimonials-wrap">
+          <header class="section-header reveal">
+            <p class="section-eyebrow">Отзывы</p>
+            <h2 class="section-title">Клиенты о нас</h2>
+            <p class="section-desc">Реальные результаты — скорость, качество и поддержка на каждом этапе</p>
+          </header>
+          <div class="testimonials-stats reveal">
+            <div class="testimonials-stat">
+              <strong>4.9</strong>
+              <span>средний рейтинг</span>
+            </div>
+            <div class="testimonials-stat">
+              <strong>120+</strong>
+              <span>завершённых проектов</span>
+            </div>
+            <div class="testimonials-stat">
+              <strong>98%</strong>
+              <span>возвращаются снова</span>
+            </div>
+          </div>
+          <div class="testimonials-scroll snap-scroll" id="testimonialScroll">
+            <blockquote class="testimonial-card reveal">
+              <span class="testimonial-quote" aria-hidden="true">"</span>
+              <div class="testimonial-stars" aria-hidden="true">★★★★★</div>
+              <p>«Лендинг за 12 дней. Конверсия ×2. Команда всегда на связи.»</p>
+              <footer>
+                <span class="testimonial-avatar testimonial-avatar--green">АК</span>
+                <div><strong>Анна К.</strong><span>GreenMarket</span></div>
+              </footer>
+            </blockquote>
+            <blockquote class="testimonial-card reveal">
+              <span class="testimonial-quote" aria-hidden="true">"</span>
+              <div class="testimonial-stars" aria-hidden="true">★★★★★</div>
+              <p>«Сайт платёжного сервиса — быстро, без костылей. Чистый код.»</p>
+              <footer>
+                <span class="testimonial-avatar testimonial-avatar--blue">ДВ</span>
+                <div><strong>Дмитрий В.</strong><span>PayFlow</span></div>
+              </footer>
+            </blockquote>
+            <blockquote class="testimonial-card reveal">
+              <span class="testimonial-quote" aria-hidden="true">"</span>
+              <div class="testimonial-stars" aria-hidden="true">★★★★★</div>
+              <p>«Редизайн без потери SEO. Современно и быстро.»</p>
+              <footer>
+                <span class="testimonial-avatar testimonial-avatar--orange">ЕМ</span>
+                <div><strong>Елена М.</strong><span>MedLine</span></div>
+              </footer>
+            </blockquote>
+          </div>
         </div>
       </section>
 
