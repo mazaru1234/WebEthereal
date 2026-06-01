@@ -47,7 +47,7 @@ function initContactForm() {
       form.reset();
       btn?.classList.remove('loading');
       btn?.removeAttribute('disabled');
-      showToast('Заявка отправлена! Свяжемся с вами скоро.');
+      showToast('Request sent! We\'ll get back to you soon.');
     }, 1200);
   });
 
