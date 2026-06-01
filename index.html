@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>WebEthereal — разработка сайтов</title>
+  <meta name="description" content="WebEthereal — веб-студия полного цикла: лендинги, корпоративные сайты, интернет-магазины.">
+  <meta name="theme-color" content="#13171f">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Перейти к содержимому</a>
+
+  <div class="app-shell">
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+    <header class="site-header" id="top">
+      <nav class="nav" aria-label="Главная навигация">
+        <a href="#top" class="nav-logo">
+          <span class="logo-mark" aria-hidden="true"></span>
+          <span class="logo-text">Web<span class="logo-accent">Ethereal</span></span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="#services">Услуги</a></li>
+          <li><a href="#work">Работы</a></li>
+          <li><a href="#process">Процесс</a></li>
+          <li><a href="#about">Отзывы</a></li>
+          <li><a href="docs.html">Цены</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a href="#contact" class="btn btn-primary">Сотрудничество</a>
+        </div>
+        <a href="#contact" class="btn btn-primary btn-sm header-cta mobile-only">Связаться</a>
+        <button class="nav-toggle mobile-only" id="navToggle" aria-label="Открыть меню" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+      <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+        <ul class="drawer-links">
+          <li><a href="#services">Услуги</a></li>
+          <li><a href="#work">Работы</a></li>
+          <li><a href="#process">Процесс</a></li>
+          <li><a href="#about">Отзывы</a></li>
+          <li><a href="docs.html">Цены</a></li>
+          <li><a href="#contact">Контакты</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="hero-bg" aria-hidden="true">
+          <div class="hero-orb hero-orb-1"></div>
+          <div class="hero-orb hero-orb-2"></div>
+          <div class="hero-orb hero-orb-3"></div>
+        </div>
+
+        <div class="hero-content">
+          <p class="hero-badge anim-item" style="--i:0">Веб-студия · Mobile-first</p>
+          <h1 class="hero-title anim-item" style="--i:1">
+            Сайты, которые<br>
+            <span class="hero-highlight">работают на бизнес</span>
+          </h1>
+          <p class="hero-desc anim-item" style="--i:2">
+            Лендинги, корпоративные сайты и магазины — быстро, красиво, с современными анимациями.
+          </p>
+          <div class="hero-cta anim-item" style="--i:3">
+            <a href="https://t.me/MrJShTg" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg btn-press">Telegram</a>
+            <a href="https://x.com/MrJohnShh" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-lg btn-press">X / Twitter</a>
+          </div>
+
+          <div class="phone-mock anim-item" style="--i:4" aria-hidden="true">
+            <div class="phone-frame">
+              <div class="phone-notch"></div>
+              <div class="phone-screen">
+                <div class="mock-header"></div>
+                <div class="mock-block mock-block-lg"></div>
+                <div class="mock-row">
+                  <div class="mock-block mock-block-sm"></div>
+                  <div class="mock-block mock-block-sm"></div>
+                </div>
+                <div class="mock-block mock-block-md"></div>
+                <div class="mock-nav"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-stats anim-item" style="--i:5">
+            <div class="hero-stat">
+              <span class="hero-stat-num" data-count="120" data-suffix="+">0</span>
+              <span class="hero-stat-label">проектов</span>
+            </div>
+            <div class="hero-stat">
+              <span class="hero-stat-num" data-count="8" data-suffix=" лет">0</span>
+              <span class="hero-stat-label">на рынке</span>
+            </div>
+            <div class="hero-stat">
+              <span class="hero-stat-num" data-count="14" data-suffix=" дн">0</span>
+              <span class="hero-stat-label">срок лендинга</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="marquee-section" aria-hidden="true">
+        <div class="marquee-track">
+          <span>FinTech Co</span><span>GreenMarket</span><span>LogiPro</span><span>MedLine</span><span>StartHub</span>
+          <span>FinTech Co</span><span>GreenMarket</span><span>LogiPro</span><span>MedLine</span><span>StartHub</span>
+        </div>
+      </section>
+
+      <section class="section services" id="services">
+        <header class="section-header reveal">
+          <p class="section-eyebrow">Услуги</p>
+          <h2 class="section-title">Что делаем</h2>
+        </header>
+        <div class="services-scroll snap-scroll">
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+            </div>
+            <span class="service-num">01</span>
+            <h3>Лендинги</h3>
+            <p>Продающие страницы с анимациями, формами и аналитикой.</p>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V7l7-4 7 4v14"/><path d="M9 21v-6h6v6"/></svg>
+            </div>
+            <span class="service-num">02</span>
+            <h3>Корпоративные</h3>
+            <p>Имидж, SEO, CMS — всё под ключ.</p>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+            </div>
+            <span class="service-num">03</span>
+            <h3>E-commerce</h3>
+            <p>Магазины с оплатой, доставкой и личным кабинетом.</p>
+          </article>
+        </div>
+        <div class="scroll-hint" aria-hidden="true">← листай →</div>
+      </section>
+
+      <section class="section metrics" aria-label="Показатели">
+        <div class="metrics-grid">
+          <div class="metric-card reveal">
+            <span class="metric-value" data-count="98" data-suffix="%">0</span>
+            <span class="metric-label">возвращаются с новым проектом</span>
+          </div>
+          <div class="metric-card reveal">
+            <span class="metric-value">&lt;2с</span>
+            <span class="metric-label">загрузка сайтов</span>
+          </div>
+          <div class="metric-card reveal">
+            <span class="metric-value">24/7</span>
+            <span class="metric-label">мониторинг</span>
+          </div>
+          <div class="metric-card reveal">
+            <span class="metric-value" data-count="40" data-prefix="+" data-suffix="%">0</span>
+            <span class="metric-label">рост конверсии</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section work" id="work">
+        <header class="section-header reveal">
+          <p class="section-eyebrow">Портфолио</p>
+          <h2 class="section-title">Избранные работы</h2>
+        </header>
+        <div class="work-scroll snap-scroll" id="workScroll">
+          <article class="work-card reveal">
+            <div class="work-preview work-preview-1"><span class="work-float-tag">+62%</span></div>
+            <div class="work-info">
+              <span class="work-tag">E-commerce</span>
+              <h3>GreenMarket</h3>
+              <p>Органические продукты онлайн</p>
+            </div>
+          </article>
+          <article class="work-card reveal">
+            <div class="work-preview work-preview-2"></div>
+            <div class="work-info">
+              <span class="work-tag">FinTech</span>
+              <h3>PayFlow</h3>
+              <p>Платёжный сервис</p>
+            </div>
+          </article>
+          <article class="work-card reveal">
+            <div class="work-preview work-preview-3"></div>
+            <div class="work-info">
+              <span class="work-tag">Корпоративный</span>
+              <h3>LogiPro</h3>
+              <p>Логистическая компания</p>
+            </div>
+          </article>
+          <article class="work-card reveal">
+            <div class="work-preview work-preview-4"></div>
+            <div class="work-info">
+              <span class="work-tag">Медицина</span>
+              <h3>MedLine</h3>
+              <p>Клиника с записью онлайн</p>
+            </div>
+          </article>
+        </div>
+        <div class="work-dots" id="workDots" aria-hidden="true"></div>
+      </section>
+
+      <section class="section process" id="process">
+        <header class="section-header reveal">
+          <p class="section-eyebrow">Процесс</p>
+          <h2 class="section-title">4 шага до запуска</h2>
+        </header>
+        <div class="process-scroll snap-scroll">
+          <article class="process-step reveal">
+            <span class="process-num">1</span>
+            <h3>Бриф</h3>
+            <p>Цели, аудитория, сроки, бюджет.</p>
+          </article>
+          <article class="process-step reveal">
+            <span class="process-num">2</span>
+            <h3>Дизайн</h3>
+            <p>Figma-макеты и прототип.</p>
+          </article>
+          <article class="process-step reveal">
+            <span class="process-num">3</span>
+            <h3>Разработка</h3>
+            <p>Вёрстка, CMS, тесты.</p>
+          </article>
+          <article class="process-step reveal">
+            <span class="process-num">4</span>
+            <h3>Запуск</h3>
+            <p>Деплой и поддержка.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section stack" id="stack">
+        <header class="section-header reveal">
+          <p class="section-eyebrow">Стек</p>
+          <h2 class="section-title">Технологии</h2>
+        </header>
+        <div class="stack-grid">
+          <span class="stack-pill reveal">React</span>
+          <span class="stack-pill reveal">Next.js</span>
+          <span class="stack-pill reveal">Vue</span>
+          <span class="stack-pill reveal">TypeScript</span>
+          <span class="stack-pill reveal">Figma</span>
+          <span class="stack-pill reveal">Node.js</span>
+          <span class="stack-pill reveal">Shopify</span>
+          <span class="stack-pill reveal">Vercel</span>
+        </div>
+      </section>
+
+      <section class="section testimonials" id="about">
+        <header class="section-header reveal">
+          <p class="section-eyebrow">Отзывы</p>
+          <h2 class="section-title">Клиенты о нас</h2>
+        </header>
+        <div class="testimonials-scroll snap-scroll" id="testimonialScroll">
+          <blockquote class="testimonial-card reveal">
+            <div class="testimonial-stars" aria-hidden="true">★★★★★</div>
+            <p>«Лендинг за 12 дней. Конверсия ×2. Команда всегда на связи.»</p>
+            <footer><strong>Анна К.</strong><span>GreenMarket</span></footer>
+          </blockquote>
+          <blockquote class="testimonial-card reveal">
+            <div class="testimonial-stars" aria-hidden="true">★★★★★</div>
+            <p>«Сайт платёжного сервиса — быстро, без костылей. Чистый код.»</p>
+            <footer><strong>Дмитрий В.</strong><span>PayFlow</span></footer>
+          </blockquote>
+          <blockquote class="testimonial-card reveal">
+            <div class="testimonial-stars" aria-hidden="true">★★★★★</div>
+            <p>«Редизайн без потери SEO. Современно и быстро.»</p>
+            <footer><strong>Елена М.</strong><span>MedLine</span></footer>
+          </blockquote>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="tg-block reveal">
+          <header class="section-header">
+            <p class="section-eyebrow">Контакты</p>
+            <h2 class="section-title">Начнём сотрудничество?</h2>
+            <p class="contact-desc">Напишите в Telegram или X — обсудим задачу, сроки и формат работы.</p>
+          </header>
+          <div class="social-cards">
+            <a href="https://t.me/MrJShTg" target="_blank" rel="noopener noreferrer" class="social-card social-card--tg btn-press">
+              <span class="social-icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+              </span>
+              <span class="social-info">
+                <span class="social-label">Telegram</span>
+                <span class="social-handle">@MrJShTg</span>
+              </span>
+              <span class="social-arrow" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </span>
+            </a>
+            <a href="https://x.com/MrJohnShh" target="_blank" rel="noopener noreferrer" class="social-card social-card--x btn-press">
+              <span class="social-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </span>
+              <span class="social-info">
+                <span class="social-label">X / Twitter</span>
+                <span class="social-handle">@MrJohnShh</span>
+              </span>
+              <span class="social-arrow" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="#top" class="nav-logo">
+            <span class="logo-mark" aria-hidden="true"></span>
+            <span class="logo-text">Web<span class="logo-accent">Ethereal</span></span>
+          </a>
+          <p>Разработка сайтов для бизнеса.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Навигация</h4>
+          <a href="#services">Услуги</a>
+          <a href="#work">Работы</a>
+          <a href="#process">Процесс</a>
+          <a href="docs.html">Цены</a>
+        </div>
+        <div class="footer-col">
+          <h4>Контакты</h4>
+          <a href="https://t.me/MrJShTg" target="_blank" rel="noopener noreferrer">Telegram · @MrJShTg</a>
+          <a href="https://x.com/MrJohnShh" target="_blank" rel="noopener noreferrer">X · @MrJohnShh</a>
+        </div>
+      </div>
+      <p class="footer-copy">© 2026 WebEthereal. Все права защищены.</p>
+    </footer>
+
+    <nav class="bottom-nav" aria-label="Нижняя навигация">
+      <a href="#top" class="bottom-nav-item active" data-section="top">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+        <span>Главная</span>
+      </a>
+      <a href="#services" class="bottom-nav-item" data-section="services">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+        <span>Услуги</span>
+      </a>
+      <a href="#work" class="bottom-nav-item" data-section="work">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+        <span>Работы</span>
+      </a>
+      <a href="#contact" class="bottom-nav-item bottom-nav-cta" data-section="contact">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        <span>Связаться</span>
+      </a>
+    </nav>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="js/main.js"></script>
+</body>
+</html>
