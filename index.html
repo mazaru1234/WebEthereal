@@ -191,73 +191,108 @@
       </section>
 
       <section class="section metrics" aria-label="Показатели">
-        <div class="metrics-grid">
-          <div class="metric-card reveal">
-            <span class="metric-value" data-count="98" data-suffix="%">0</span>
-            <span class="metric-label">возвращаются с новым проектом</span>
-          </div>
-          <div class="metric-card reveal">
-            <span class="metric-value">&lt;2с</span>
-            <span class="metric-label">загрузка сайтов</span>
-          </div>
-          <div class="metric-card reveal">
-            <span class="metric-value">24/7</span>
-            <span class="metric-label">мониторинг</span>
-          </div>
-          <div class="metric-card reveal">
-            <span class="metric-value" data-count="40" data-prefix="+" data-suffix="%">0</span>
-            <span class="metric-label">рост конверсии</span>
+        <div class="metrics-wrap">
+          <div class="metrics-grid">
+            <article class="metric-card metric-card--return reveal">
+              <div class="metric-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 1l4 4-4 4"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><path d="M7 23l-4-4 4-4"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
+              </div>
+              <span class="metric-value" data-count="98" data-suffix="%">0</span>
+              <span class="metric-label">возвращаются с новым проектом</span>
+            </article>
+            <article class="metric-card metric-card--speed reveal">
+              <div class="metric-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+              </div>
+              <span class="metric-value">&lt;2с</span>
+              <span class="metric-label">загрузка сайтов</span>
+            </article>
+            <article class="metric-card metric-card--monitor reveal">
+              <div class="metric-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <span class="metric-value">24/7</span>
+              <span class="metric-label">мониторинг</span>
+            </article>
+            <article class="metric-card metric-card--growth reveal">
+              <div class="metric-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 6l-9.5 9.5-5-5L1 18"/><path d="M17 6h6v6"/></svg>
+              </div>
+              <span class="metric-value" data-count="40" data-prefix="+" data-suffix="%">0</span>
+              <span class="metric-label">рост конверсии</span>
+            </article>
           </div>
         </div>
       </section>
 
       <section class="section work" id="work">
-        <header class="section-header reveal">
-          <p class="section-eyebrow">Портфолио</p>
-          <h2 class="section-title">Избранные работы</h2>
-        </header>
-        <div class="work-scroll snap-scroll" id="workScroll">
-          <article class="work-card reveal">
-            <div class="work-preview">
-              <img src="images/work-greenmarket.png" alt="GreenMarket — интернет-магазин органических продуктов" loading="lazy" width="560" height="320">
-              <span class="work-float-tag">+62%</span>
-            </div>
-            <div class="work-info">
-              <span class="work-tag">E-commerce</span>
-              <h3>GreenMarket</h3>
-              <p>Органические продукты онлайн</p>
-            </div>
-          </article>
-          <article class="work-card reveal">
-            <div class="work-preview">
-              <img src="images/work-payflow.png" alt="PayFlow — платёжный сервис" loading="lazy" width="560" height="320">
-            </div>
-            <div class="work-info">
-              <span class="work-tag">FinTech</span>
-              <h3>PayFlow</h3>
-              <p>Платёжный сервис</p>
-            </div>
-          </article>
-          <article class="work-card reveal">
-            <div class="work-preview">
-              <img src="images/work-logipro.png" alt="LogiPro — корпоративный сайт логистической компании" loading="lazy" width="560" height="320">
-            </div>
-            <div class="work-info">
-              <span class="work-tag">Корпоративный</span>
-              <h3>LogiPro</h3>
-              <p>Логистическая компания</p>
-            </div>
-          </article>
-          <article class="work-card reveal">
-            <div class="work-preview">
-              <img src="images/work-medline.png" alt="MedLine — сайт клиники с онлайн-записью" loading="lazy" width="560" height="320">
-            </div>
-            <div class="work-info">
-              <span class="work-tag">Медицина</span>
-              <h3>MedLine</h3>
-              <p>Клиника с записью онлайн</p>
-            </div>
-          </article>
+        <div class="work-wrap">
+          <header class="section-header reveal">
+            <p class="section-eyebrow">Портфолио</p>
+            <h2 class="section-title">Избранные работы</h2>
+            <p class="section-desc">Реальные проекты для e-commerce, FinTech, логистики и медицины</p>
+          </header>
+          <div class="work-scroll snap-scroll" id="workScroll">
+            <article class="work-card work-card--green reveal">
+              <div class="work-preview">
+                <img src="images/work-greenmarket.png" alt="GreenMarket — интернет-магазин органических продуктов" loading="lazy" width="560" height="320">
+                <span class="work-float-tag">+62%</span>
+              </div>
+              <div class="work-info">
+                <div class="work-meta">
+                  <span class="work-tag">E-commerce</span>
+                  <span class="work-year">2025</span>
+                </div>
+                <h3>GreenMarket</h3>
+                <p>Органические продукты онлайн</p>
+              </div>
+            </article>
+            <article class="work-card work-card--blue reveal">
+              <div class="work-preview">
+                <img src="images/work-payflow.png" alt="PayFlow — платёжный сервис" loading="lazy" width="560" height="320">
+                <span class="work-float-tag work-float-tag--blue">FinTech</span>
+              </div>
+              <div class="work-info">
+                <div class="work-meta">
+                  <span class="work-tag">FinTech</span>
+                  <span class="work-year">2024</span>
+                </div>
+                <h3>PayFlow</h3>
+                <p>Платёжный сервис</p>
+              </div>
+            </article>
+            <article class="work-card work-card--purple reveal">
+              <div class="work-preview">
+                <img src="images/work-logipro.png" alt="LogiPro — корпоративный сайт логистической компании" loading="lazy" width="560" height="320">
+                <span class="work-float-tag work-float-tag--purple">B2B</span>
+              </div>
+              <div class="work-info">
+                <div class="work-meta">
+                  <span class="work-tag">Корпоративный</span>
+                  <span class="work-year">2024</span>
+                </div>
+                <h3>LogiPro</h3>
+                <p>Логистическая компания</p>
+              </div>
+            </article>
+            <article class="work-card work-card--orange reveal">
+              <div class="work-preview">
+                <img src="images/work-medline.png" alt="MedLine — сайт клиники с онлайн-записью" loading="lazy" width="560" height="320">
+                <span class="work-float-tag work-float-tag--orange">SEO+</span>
+              </div>
+              <div class="work-info">
+                <div class="work-meta">
+                  <span class="work-tag">Медицина</span>
+                  <span class="work-year">2025</span>
+                </div>
+                <h3>MedLine</h3>
+                <p>Клиника с записью онлайн</p>
+              </div>
+            </article>
+          </div>
+          <div class="work-footer reveal">
+            <a href="#contact" class="work-cta">Обсудить ваш проект →</a>
+          </div>
         </div>
         <div class="work-dots" id="workDots" aria-hidden="true"></div>
       </section>
