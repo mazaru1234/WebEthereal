@@ -1067,7 +1067,7 @@ button, input, textarea { font: inherit; border: none; background: none; }
   background: var(--bg-card);
   border-radius: var(--radius-sm);
   border: 1px solid var(--border);
-  text-align: center;
+  text-align: left;
   overflow: hidden;
   transition: transform var(--dur-base) var(--ease-spring), border-color var(--dur-base), box-shadow var(--dur-base);
 }
@@ -1083,6 +1083,10 @@ button, input, textarea { font: inherit; border: none; background: none; }
 }
 
 .metric-card--return { --metric-accent: #34d399; }
+.metric-card--maintenance { --metric-accent: #56c8ff; }
+.metric-card--seo { --metric-accent: #34d399; }
+.metric-card--pro { --metric-accent: #a78bfa; }
+.metric-card--reliability { --metric-accent: #fb923c; }
 .metric-card--speed { --metric-accent: #56c8ff; }
 .metric-card--monitor { --metric-accent: #a78bfa; }
 .metric-card--growth { --metric-accent: #fb923c; }
@@ -1095,7 +1099,7 @@ button, input, textarea { font: inherit; border: none; background: none; }
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto 0.625rem;
+  margin: 0 0 0.625rem;
   background: color-mix(in srgb, var(--metric-accent) 12%, transparent);
   color: var(--metric-accent);
   border-radius: 10px;
@@ -1110,6 +1114,22 @@ button, input, textarea { font: inherit; border: none; background: none; }
   color: var(--metric-accent);
   font-variant-numeric: tabular-nums;
   line-height: 1.1;
+}
+
+.metric-title {
+  font-family: var(--font-display);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.25;
+  margin: 0 0 0.5rem;
+}
+
+.metric-desc {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+  margin: 0;
 }
 
 .metric-label {
@@ -2123,6 +2143,10 @@ button, input, textarea { font: inherit; border: none; background: none; }
   .metric-card {
     padding: 1.5rem 1.25rem;
   }
+
+  .metric-title { font-size: 1rem; }
+
+  .metric-desc { font-size: 0.8125rem; }
 
   .metric-value { font-size: 1.875rem; }
 
