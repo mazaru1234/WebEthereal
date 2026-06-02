@@ -1,43 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-  initBgVideo();
   initSidebarHighlight();
   initTocHighlight();
 });
-
-function initBgVideo() {
-  const shell = document.querySelector('.bg-video');
-  const video = document.querySelector('.bg-video__el');
-  if (!video || !shell) return;
-
-  video.muted = true;
-  video.defaultMuted = true;
-  video.setAttribute('muted', '');
-
-  const markPlaying = () => {
-    shell.classList.add('is-playing');
-    video.removeAttribute('poster');
-  };
-
-  const play = () => {
-    const p = video.play();
-    if (p && typeof p.then === 'function') {
-      p.then(markPlaying).catch(() => {});
-    }
-  };
-
-  video.addEventListener('playing', markPlaying, { once: true });
-  video.addEventListener('loadeddata', play, { once: true });
-  video.addEventListener('canplay', play, { once: true });
-
-  if (video.readyState >= 2) play();
-  else play();
-
-  document.addEventListener('visibilitychange', () => {
-    if (!document.hidden) play();
-  });
-
-  document.addEventListener('pointerdown', play, { once: true, passive: true });
-}
 
 function initSidebarHighlight() {
   const links = document.querySelectorAll('.sidebar-link');

@@ -55,44 +55,24 @@ body {
   touch-action: manipulation;
 }
 
-.bg-video {
+.bg-media {
   position: fixed;
   inset: 0;
   z-index: 0;
   overflow: hidden;
   pointer-events: none;
-  background: #070b14 url('../images/bg-poster.jpg') center / cover no-repeat;
+  background: #070b14 url('../images/bg.jpg') center / cover no-repeat;
+  background-attachment: fixed;
 }
 
-.bg-video.is-playing {
-  background: none;
-}
-
-.bg-video__el {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  max-width: none;
-  transform: translate(-50%, -50%);
-  object-fit: cover;
-  object-position: center;
-  filter: contrast(1.04) saturate(1.06);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.bg-video__overlay {
+.bg-media__overlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(
     180deg,
-    rgba(7, 11, 20, 0.12) 0%,
-    rgba(7, 11, 20, 0.22) 50%,
-    rgba(7, 11, 20, 0.32) 100%
+    rgba(7, 11, 20, 0.15) 0%,
+    rgba(7, 11, 20, 0.25) 50%,
+    rgba(7, 11, 20, 0.35) 100%
   );
 }
 
