@@ -366,6 +366,197 @@ code {
 
 .pricing-btn-primary:hover { background: var(--accent-hover); color: var(--accent-text) !important; }
 
+/* ===== Plans picker (wireframe layout) ===== */
+.plans-picker {
+  display: grid;
+  grid-template-columns: minmax(120px, 160px) 1fr;
+  gap: 1.25rem;
+  margin: 1.5rem 0 2rem;
+  align-items: start;
+}
+
+.plan-tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.plan-tab {
+  display: block;
+  width: 100%;
+  padding: 0.65rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--bg-subtle);
+  color: var(--text);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 150ms, background 150ms, color 150ms;
+}
+
+.plan-tab:hover { border-color: var(--accent); color: var(--accent); }
+
+.plan-tab[aria-selected="true"] {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-text);
+}
+
+.plan-tab--hot { box-shadow: 0 0 0 1px rgba(250, 204, 21, 0.35); }
+
+.plan-panels { position: relative; min-height: 320px; }
+
+.plan-detail-card {
+  position: relative;
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 1.5rem 1.75rem;
+}
+
+.plan-detail-card[hidden] { display: none; }
+
+.plan-detail-badge {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+  padding: 0.2rem 0.65rem;
+  border-radius: 6px;
+  background: #facc15;
+  color: #111;
+  font-size: 0.6875rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.plan-detail-price {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 0.25rem;
+}
+
+.plan-detail-title {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  margin-bottom: 0.35rem;
+}
+
+.plan-detail-timeline {
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.plan-detail-sub {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.plan-detail-list {
+  list-style: disc;
+  padding-left: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.plan-detail-list li {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin-bottom: 0.25rem;
+}
+
+.plan-detail-note {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  font-style: italic;
+  margin: 0.35rem 0;
+}
+
+.plan-process {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin: 0.75rem 0;
+  max-width: 280px;
+}
+
+.plan-process-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.45rem 0.75rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border);
+  font-size: 0.8125rem;
+  font-family: var(--font-mono, 'IBM Plex Mono', monospace);
+}
+
+.plan-process-row span:first-child { font-weight: 600; color: var(--text); }
+
+.plan-detail-cta {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.65rem 1.25rem;
+  border-radius: 999px;
+  background: var(--accent);
+  color: var(--accent-text) !important;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.plan-detail-cta:hover { background: var(--accent-hover); }
+
+@media (max-width: 720px) {
+  .plans-picker { grid-template-columns: 1fr; }
+  .plan-tabs {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .plan-tab { width: auto; flex: 1 1 auto; min-width: 7rem; }
+}
+
+/* ===== Online widget ===== */
+.online-widget {
+  position: fixed;
+  left: 1rem;
+  bottom: 1rem;
+  z-index: 900;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 0.85rem;
+  border-radius: 999px;
+  background: rgba(12, 18, 34, 0.88);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  backdrop-filter: blur(10px);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  pointer-events: none;
+}
+
+.online-widget--owner { border-color: rgba(250, 204, 21, 0.45); }
+
+.online-widget__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #22c55e;
+  box-shadow: 0 0 8px rgba(34, 197, 94, 0.7);
+}
+
+.online-widget__count { color: var(--text); font-variant-numeric: tabular-nums; }
+
+.online-widget__hint { color: rgba(250, 204, 21, 0.85); }
+
 /* ===== Table ===== */
 .docs-table-wrap {
   overflow-x: auto;

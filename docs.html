@@ -58,7 +58,8 @@
             <li><a href="#landing" class="sidebar-link">Landing Pages</a></li>
             <li><a href="#corporate" class="sidebar-link">Corporate</a></li>
             <li><a href="#ecommerce" class="sidebar-link">E-commerce</a></li>
-            <li><a href="#telegram" class="sidebar-link">Telegram</a></li>
+            <li><a href="#telegram-bot" class="sidebar-link">TG Bots</a></li>
+            <li><a href="#telegram-mini" class="sidebar-link">TG Mini Apps</a></li>
             <li><a href="#webapps" class="sidebar-link">Web Apps</a></li>
             <li><a href="#more-services" class="sidebar-link">More Services</a></li>
           </ul>
@@ -130,140 +131,58 @@
         </section>
 
         <section id="pricing">
-          <h2>Plans</h2>
-          <p>Choose a package or discuss a custom project with us on Telegram.</p>
-
-          <div class="pricing-grid">
-            <article class="pricing-card">
-              <h3>Starter</h3>
-              <p class="pricing-desc">Landing page / promo site / simple bot</p>
-              <ul>
-                <li>Up to 5 screens</li>
-                <li>Responsive design</li>
-                <li>Contact form + analytics</li>
-                <li>Timeline: 10–14 days</li>
-              </ul>
-              <a href="https://t.me/MrJShTg" target="_blank" rel="noopener noreferrer" class="pricing-btn">Get a Quote</a>
-            </article>
-            <article class="pricing-card pricing-featured">
-              <span class="pricing-badge">Popular</span>
-              <h3>Business</h3>
-              <p class="pricing-desc">Corporate site / mini app / web app</p>
-              <ul>
-                <li>Up to 15 pages or full mini app</li>
-                <li>CMS + admin panel</li>
-                <li>Basic SEO setup</li>
-                <li>Timeline: 3–5 weeks</li>
-              </ul>
-              <a href="https://t.me/MrJShTg" target="_blank" rel="noopener noreferrer" class="pricing-btn pricing-btn-primary">Get a Quote</a>
-            </article>
-            <article class="pricing-card">
-              <h3>Enterprise</h3>
-              <p class="pricing-desc">E-commerce / complex bot / web app</p>
-              <ul>
-                <li>Catalog + cart + payments</li>
-                <li>Payment & CRM integrations</li>
-                <li>User accounts & dashboards</li>
-                <li>Timeline: 6–10 weeks</li>
-              </ul>
-              <a href="https://t.me/MrJShTg" target="_blank" rel="noopener noreferrer" class="pricing-btn">Get a Quote</a>
-            </article>
-          </div>
+          <h2>Plans & Pricing</h2>
+          <p>
+            Prices and timelines below are <strong>minimum ranges</strong> — final scope depends on complexity.
+            Pick a service on the left to see details.
+          </p>
+          <div id="plansPicker"></div>
         </section>
 
         <section id="landing">
-          <h2>Landing Pages & Promo Sites</h2>
-          <p>Single-page sites for product launches, ad campaigns, and lead generation.</p>
-
-          <div class="docs-table-wrap">
-            <table class="docs-table">
-              <thead>
-                <tr>
-                  <th>Included</th>
-                  <th>Details</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>UX/UI Design</td>
-                  <td>Wireframes + Figma mockups, 2 revision rounds</td>
-                </tr>
-                <tr>
-                  <td>Development</td>
-                  <td>Pixel-perfect, responsive mobile / tablet / desktop</td>
-                </tr>
-                <tr>
-                  <td>Integrations</td>
-                  <td>CRM, Google Analytics, Meta Pixel</td>
-                </tr>
-                <tr>
-                  <td>Hosting</td>
-                  <td>Deploy on Vercel / Netlify / your server</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+          <h2>Landing Pages</h2>
+          <p><strong>100$–1000$</strong> · <strong>2hour – 1day</strong> (minimum, depending on complexity)</p>
+          <ul class="docs-list">
+            <li>Main screen, service description, benefits, reviews, lead form</li>
+            <li>Responsive layout + basic SEO</li>
+            <li>Process (min.): Brief ≈15m · Design ≈30m · Dev ≈45m · Launch ≈30m</li>
+          </ul>
         </section>
 
         <section id="corporate">
           <h2>Corporate Websites</h2>
-          <p>Multi-page sites for companies: services, team, case studies, blog, contacts.</p>
+          <p><strong>300$–2500$</strong> · <strong>1day – 1.5week</strong> (minimum, depending on complexity)</p>
           <ul class="docs-list">
-            <li><strong>Structure & content</strong> — we help with IA and copy if needed</li>
-            <li><strong>CMS</strong> — WordPress, Strapi, or headless — your choice</li>
-            <li><strong>SEO</strong> — meta tags, sitemap, schema.org, Core Web Vitals</li>
-            <li><strong>Multilingual</strong> — optional, +15% to budget</li>
+            <li>Home, about, services, contacts, blog, contact form, admin panel</li>
+            <li>Process (min.): Brief ≈3h · Design ≈8h · Dev ≈9h · Launch ≈4h</li>
           </ul>
         </section>
 
         <section id="ecommerce">
-          <h2>E-commerce</h2>
-          <p>Online stores on Shopify, WooCommerce, or custom stack (Next.js + Stripe).</p>
-
-          <div class="api-group">
-            <div class="api-endpoint">
-              <span class="method method-get">Shopify</span>
-              <span>Fast launch, built-in payments and apps</span>
-            </div>
-            <div class="api-endpoint">
-              <span class="method method-post">WooCommerce</span>
-              <span>WordPress flexibility, custom theme design</span>
-            </div>
-            <div class="api-endpoint">
-              <span class="method method-get">Custom</span>
-              <span>Headless commerce for non-standard needs</span>
-            </div>
-          </div>
+          <h2>E-Commerce</h2>
+          <p><strong>500$–7500$</strong> · <strong>3day – 3week</strong> (minimum, depending on complexity)</p>
+          <ul class="docs-list">
+            <li>Catalog, product pages, cart, payments, user account, admin, delivery integration</li>
+            <li>Process (min.): Brief ≈8h · Design ≈1d · Dev ≈1d 10h · Launch ≈6h</li>
+          </ul>
         </section>
 
-        <section id="telegram">
-          <h2>Telegram Bots & Mini Apps</h2>
-          <p>Sales, support bots, and full web apps inside Telegram.</p>
+        <section id="telegram-bot">
+          <h2>Telegram Bots</h2>
+          <p><strong>100$–1500$</strong> · <strong>2hour – 3day</strong> (minimum, depending on complexity)</p>
+          <ul class="docs-list">
+            <li>Commands, menu, database, payments, notifications, API integrations</li>
+            <li>Process (min.): Brief ≈30m · Design ≈30m · Dev ≈45m · Launch ≈15m</li>
+          </ul>
+        </section>
 
-          <div class="docs-table-wrap">
-            <table class="docs-table">
-              <thead>
-                <tr>
-                  <th>Service</th>
-                  <th>What's included</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Telegram Bot</td>
-                  <td>Commands, menus, payments, CRM/webhook integrations, admin panel</td>
-                </tr>
-                <tr>
-                  <td>Mini App (TWA)</td>
-                  <td>Full web UI inside Telegram, TON/Stars payments, user auth via Telegram</td>
-                </tr>
-                <tr>
-                  <td>Bot + Mini App</td>
-                  <td>Bot as entry point, mini app for complex flows (shop, game, dashboard)</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+        <section id="telegram-mini">
+          <h2>Telegram Mini Apps</h2>
+          <p><strong>500$–4500$</strong> · <strong>3day – 3week</strong> (minimum, depending on complexity)</p>
+          <ul class="docs-list">
+            <li>Telegram auth, user account, database, API, admin panel, payments</li>
+            <li>Process (min.): Brief ≈8h · Design ≈1d · Dev ≈1d 10h · Launch ≈6h</li>
+          </ul>
         </section>
 
         <section id="webapps">
@@ -384,7 +303,8 @@
         <li><a href="#pricing">Plans</a></li>
         <li><a href="#landing">Landing Pages</a></li>
         <li><a href="#corporate">Corporate</a></li>
-        <li><a href="#telegram">Telegram</a></li>
+        <li><a href="#telegram-bot">TG Bots</a></li>
+        <li><a href="#telegram-mini">TG Mini Apps</a></li>
         <li><a href="#more-services">More Services</a></li>
         <li><a href="#support">Support</a></li>
         <li><a href="#faq">FAQ</a></li>
@@ -392,6 +312,9 @@
     </aside>
   </div>
 
+  <script src="js/site-config.js"></script>
+  <script src="js/plans.js"></script>
   <script src="js/docs.js"></script>
+  <script src="js/online-widget.js"></script>
 </body>
 </html>
