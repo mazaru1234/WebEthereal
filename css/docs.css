@@ -232,6 +232,10 @@ code {
 .docs-lead {
   font-size: 1.0625rem;
   color: var(--text-muted);
+  margin-bottom: 0.75rem;
+}
+
+.docs-lead:last-of-type {
   margin-bottom: 1.5rem;
 }
 
