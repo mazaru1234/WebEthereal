@@ -118,6 +118,29 @@ const WE_PLANS = [
     ],
     minNote: 'minimum term',
   },
+  {
+    id: 'webapps',
+    label: 'Web Apps',
+    price: '1000$–10000$',
+    title: 'Web Applications',
+    timeline: '3week – 1month',
+    includes: [
+      'Personal account',
+      'Database',
+      'API',
+      'Admin panel',
+      'Role system',
+      'Integrations',
+    ],
+    note: 'depending on the complexity',
+    process: [
+      { step: 'BRIEF', time: '≈ 3d' },
+      { step: 'DESIGN', time: '≈ 1w' },
+      { step: 'DEVELOPMENT', time: '≈ 1w' },
+      { step: 'LAUNCH', time: '≈ 4d' },
+    ],
+    minNote: 'minimum term',
+  },
 ];
 
 function renderPlanCard(plan) {
