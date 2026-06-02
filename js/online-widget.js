@@ -1,7 +1,11 @@
 (function () {
   const cfg = window.WE_CONFIG || {};
   const OWNER_KEY = cfg.OWNER_KEY || 'bagir';
-  const API = cfg.STATS_API || '/api/online';
+  const API =
+    cfg.STATS_API ||
+    (location.hostname.includes('github.io')
+      ? 'https://webethereal.vercel.app/api/online'
+      : '/api/online');
   const PING_MS = cfg.PING_MS || 20000;
   const SHOW_PUBLIC = !!cfg.SHOW_PUBLIC_ONLINE;
 
@@ -58,8 +62,7 @@
       if (n) n.textContent = String(data.online ?? '—');
     } catch (_) {
       const n = el.querySelector('[data-online]');
-      if (n && isOwner) n.textContent = '—';
-      if (n && !isOwner) el.hidden = true;
+      if (n) n.textContent = isOwner ? '—' : '1';
     }
   }
 

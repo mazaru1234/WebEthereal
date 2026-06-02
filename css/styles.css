@@ -1054,6 +1054,10 @@ button, input, textarea { font: inherit; border: none; background: none; }
   margin-inline: auto;
 }
 
+.metrics .section-header {
+  margin-bottom: 1.25rem;
+}
+
 .metrics-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -1082,14 +1086,28 @@ button, input, textarea { font: inherit; border: none; background: none; }
   background: linear-gradient(90deg, transparent, var(--metric-accent), transparent);
 }
 
-.metric-card--return { --metric-accent: #34d399; }
-.metric-card--maintenance { --metric-accent: #56c8ff; }
-.metric-card--seo { --metric-accent: #34d399; }
-.metric-card--pro { --metric-accent: #a78bfa; }
-.metric-card--reliability { --metric-accent: #fb923c; }
-.metric-card--speed { --metric-accent: #56c8ff; }
-.metric-card--monitor { --metric-accent: #a78bfa; }
-.metric-card--growth { --metric-accent: #fb923c; }
+.metric-card--beauty { --metric-accent: #e879f9; }
+.metric-card--responsive { --metric-accent: #56c8ff; }
+.metric-card--performance { --metric-accent: #34d399; }
+.metric-card--delivery { --metric-accent: #fb923c; }
+.metric-card--simple { --metric-accent: #a78bfa; }
+.metric-card--cta { --metric-accent: #56c8ff; }
+
+.metric-desc a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.metric-cta-link {
+  display: inline-block;
+  margin-top: 0.625rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.metric-cta-link:hover { text-decoration: underline; }
 
 .metric-card:active { transform: scale(0.98); }
 
@@ -2212,8 +2230,13 @@ button, input, textarea { font: inherit; border: none; background: none; }
   }
 
   .metrics-grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
+  }
+
+  .metrics .section-header {
+    text-align: center;
+    margin-bottom: 2rem;
   }
 
   .metric-card {
