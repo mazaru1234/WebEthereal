@@ -61,7 +61,7 @@ function initContactForm() {
 
 function initScrollReveal() {
   const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const els = document.querySelectorAll('.reveal, .service-card, .work-card, .process-step, .testimonial-card, .metric-card, .stack-card');
+  const els = document.querySelectorAll('.reveal, .service-card, .work-card, .process-step, .testimonial-card, .metric-card, .stack-card, .faq-item');
 
   if (prefersReduced) {
     els.forEach(el => el.classList.add('visible'));

@@ -665,6 +665,18 @@ code {
   padding: 0 1.25rem 1rem;
   font-size: 0.9375rem;
   color: var(--text-muted);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.faq-item p + p {
+  padding-top: 0;
+}
+
+.faq-item p a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 /* ===== CTA block ===== */
