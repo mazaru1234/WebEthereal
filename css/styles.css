@@ -2241,8 +2241,13 @@ button, input, textarea { font: inherit; border: none; background: none; }
   .work .section-desc { margin-inline: auto; }
 
   .work-scroll {
-    grid-template-columns: repeat(4, 1fr);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.25rem;
+    overflow: visible;
+    margin-inline: 0;
+    padding-inline: 0;
+    scroll-snap-type: none;
   }
 
   .work-card {
